@@ -26,30 +26,4 @@ models:
   Search:
     fake:
         _count: 1
-        result: {"&lt;table class=\"table\"&gt;
-                &lt;thead&gt;
-                &lt;tr&gt;
-                  &lt;th&gt;First Name&lt;\/th&gt;
-                  &lt;th&gt;Last Name&lt;\/th&gt;
-                  &lt;th&gt;Email&lt;\/th&gt;
-                &lt;\/tr&gt;
-                &lt;\/thead&gt;
-                &lt;tbody id=\"search-results\" class=\"\"&gt;&lt;tr&gt;&lt;td&gt;Venus&lt;\/td&gt;&lt;td&gt;Grimes&lt;\/td&gt;&lt;td&gt;lectus.rutrum@Duisa.edu&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Fletcher&lt;\/td&gt;&lt;td&gt;Owen&lt;\/td&gt;&lt;td&gt;metus@Aenean.org&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;William&lt;\/td&gt;&lt;td&gt;Hale&lt;\/td&gt;&lt;td&gt;eu.dolor@risusodio.edu&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;TaShya&lt;\/td&gt;&lt;td&gt;Cash&lt;\/td&gt;&lt;td&gt;tincidunt.orci.quis@nuncnullavulputate.co.uk&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Kevyn&lt;\/td&gt;&lt;td&gt;Hoover&lt;\/td&gt;&lt;td&gt;tristique.pellentesque.tellus@Cumsociis.co.uk&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Jakeem&lt;\/td&gt;&lt;td&gt;Walker&lt;\/td&gt;&lt;td&gt;Morbi.vehicula.Pellentesque@faucibusorci.org&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Malcolm&lt;\/td&gt;&lt;td&gt;Trujillo&lt;\/td&gt;&lt;td&gt;sagittis@velit.edu&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Wynne&lt;\/td&gt;&lt;td&gt;Rice&lt;\/td&gt;&lt;td&gt;augue.id@felisorciadipiscing.edu&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Evangeline&lt;\/td&gt;&lt;td&gt;Klein&lt;\/td&gt;&lt;td&gt;adipiscing.lobortis@sem.org&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Jennifer&lt;\/td&gt;&lt;td&gt;Russell&lt;\/td&gt;&lt;td&gt;sapien.Aenean.massa@risus.com&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Rama&lt;\/td&gt;&lt;td&gt;Freeman&lt;\/td&gt;&lt;td&gt;Proin@quamPellentesquehabitant.net&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Jena&lt;\/td&gt;&lt;td&gt;Mathis&lt;\/td&gt;&lt;td&gt;non.cursus.non@Phaselluselit.com&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Alexandra&lt;\/td&gt;&lt;td&gt;Maynard&lt;\/td&gt;&lt;td&gt;porta.elit.a@anequeNullam.ca&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Tallulah&lt;\/td&gt;&lt;td&gt;Haley&lt;\/td&gt;&lt;td&gt;ligula@id.net&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Timon&lt;\/td&gt;&lt;td&gt;Small&lt;\/td&gt;&lt;td&gt;velit.Quisque.varius@gravidaPraesent.org&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Randall&lt;\/td&gt;&lt;td&gt;Pena&lt;\/td&gt;&lt;td&gt;facilisis@Donecconsectetuer.edu&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;tr&gt;&lt;td&gt;Conan&lt;\/td&gt;&lt;td&gt;Vaughan&lt;\/td&gt;&lt;td&gt;luctus.sit@Classaptenttaciti.edu&lt;\/td&gt;&lt;\/tr&gt;
-                &lt;\/tbody&gt;
-                &lt;\/table&gt;"}
+        result: { loremParagraphs: [10, 100] }
