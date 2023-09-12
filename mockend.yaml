@@ -1,0 +1,138 @@
+models:
+  Post:
+    hasMany: [Comment]
+    fake:
+      _count: 10
+      cover: { imageURL: [1920, 1080] }
+      title: { loremWords: [5, 20] }
+      body: { loremParagraphs: [10, 100] }
+      category: { oneOfString: [one, two, three] }
+      isDraft: { bool: 20 }
+      views: { int: [0, 1000] }
+      createdAt: { dateTime: [2010-01-01T00:00:00Z, 2020-12-31T23:59:59Z] }
+  Comment:
+    belongsTo: [Post]
+    fake:
+      _count: 25
+      email: email
+      body: { loremParagraphs: [10, 100] }
+      createdAt: { dateTime: [2010-01-01T00:00:00Z, 2020-12-31T23:59:59Z] }
+  Contact:
+    fake:
+        _count: 20
+        firstName: { loremWords: [5, 10]}
+        lastName: { loremWords: [5, 10]}
+        email: email
+  Search:
+    fake:
+        _count: 1
+        result: "<table class=\"table\">
+                <thead>
+                <tr>
+                  <th>First Name<\/th>
+                  <th>Last Name<\/th>
+                  <th>Email<\/th>
+                <\/tr>
+                <\/thead>
+                <tbody id=\"search-results\" class=\"\"><tr><td>Venus<\/td><td>Grimes<\/td><td>lectus.rutrum@Duisa.edu<\/td><\/tr>
+                <tr><td>Fletcher<\/td><td>Owen<\/td><td>metus@Aenean.org<\/td><\/tr>
+                <tr><td>William<\/td><td>Hale<\/td><td>eu.dolor@risusodio.edu<\/td><\/tr>
+                <tr><td>TaShya<\/td><td>Cash<\/td><td>tincidunt.orci.quis@nuncnullavulputate.co.uk<\/td><\/tr>
+                <tr><td>Kevyn<\/td><td>Hoover<\/td><td>tristique.pellentesque.tellus@Cumsociis.co.uk<\/td><\/tr>
+                <tr><td>Jakeem<\/td><td>Walker<\/td><td>Morbi.vehicula.Pellentesque@faucibusorci.org<\/td><\/tr>
+                <tr><td>Malcolm<\/td><td>Trujillo<\/td><td>sagittis@velit.edu<\/td><\/tr>
+                <tr><td>Wynne<\/td><td>Rice<\/td><td>augue.id@felisorciadipiscing.edu<\/td><\/tr>
+                <tr><td>Evangeline<\/td><td>Klein<\/td><td>adipiscing.lobortis@sem.org<\/td><\/tr>
+                <tr><td>Jennifer<\/td><td>Russell<\/td><td>sapien.Aenean.massa@risus.com<\/td><\/tr>
+                <tr><td>Rama<\/td><td>Freeman<\/td><td>Proin@quamPellentesquehabitant.net<\/td><\/tr>
+                <tr><td>Jena<\/td><td>Mathis<\/td><td>non.cursus.non@Phaselluselit.com<\/td><\/tr>
+                <tr><td>Alexandra<\/td><td>Maynard<\/td><td>porta.elit.a@anequeNullam.ca<\/td><\/tr>
+                <tr><td>Tallulah<\/td><td>Haley<\/td><td>ligula@id.net<\/td><\/tr>
+                <tr><td>Timon<\/td><td>Small<\/td><td>velit.Quisque.varius@gravidaPraesent.org<\/td><\/tr>
+                <tr><td>Randall<\/td><td>Pena<\/td><td>facilisis@Donecconsectetuer.edu<\/td><\/tr>
+                <tr><td>Conan<\/td><td>Vaughan<\/td><td>luctus.sit@Classaptenttaciti.edu<\/td><\/tr>
+                <tr><td>Dora<\/td><td>Allen<\/td><td>est.arcu.ac@Vestibulumante.co.uk<\/td><\/tr>
+                <tr><td>Aiko<\/td><td>Little<\/td><td>quam.dignissim@convallisest.net<\/td><\/tr>
+                <tr><td>Jessamine<\/td><td>Bauer<\/td><td>taciti.sociosqu@nibhvulputatemauris.co.uk<\/td><\/tr>
+                <tr><td>Gillian<\/td><td>Livingston<\/td><td>justo@atiaculisquis.com<\/td><\/tr>
+                <tr><td>Laith<\/td><td>Nicholson<\/td><td>elit.pellentesque.a@diam.org<\/td><\/tr>
+                <tr><td>Paloma<\/td><td>Alston<\/td><td>cursus@metus.org<\/td><\/tr>
+                <tr><td>Freya<\/td><td>Dunn<\/td><td>Vestibulum.accumsan@metus.co.uk<\/td><\/tr>
+                <tr><td>Griffin<\/td><td>Rice<\/td><td>justo@tortordictumeu.net<\/td><\/tr>
+                <tr><td>Catherine<\/td><td>West<\/td><td>malesuada.augue@elementum.com<\/td><\/tr>
+                <tr><td>Jena<\/td><td>Chambers<\/td><td>erat.Etiam.vestibulum@quamelementumat.net<\/td><\/tr>
+                <tr><td>Neil<\/td><td>Rodriguez<\/td><td>enim@facilisis.com<\/td><\/tr>
+                <tr><td>Freya<\/td><td>Charles<\/td><td>metus@nec.net<\/td><\/tr>
+                <tr><td>Anastasia<\/td><td>Strong<\/td><td>sit@vitae.edu<\/td><\/tr>
+                <tr><td>Bell<\/td><td>Simon<\/td><td>mollis.nec.cursus@disparturientmontes.ca<\/td><\/tr>
+                <tr><td>Minerva<\/td><td>Allison<\/td><td>Donec@nequeIn.edu<\/td><\/tr>
+                <tr><td>Yoko<\/td><td>Dawson<\/td><td>neque.sed@semper.net<\/td><\/tr>
+                <tr><td>Nadine<\/td><td>Justice<\/td><td>netus@et.edu<\/td><\/tr>
+                <tr><td>Hoyt<\/td><td>Rosa<\/td><td>Nullam.ut.nisi@Aliquam.co.uk<\/td><\/tr>
+                <tr><td>Shafira<\/td><td>Noel<\/td><td>tincidunt.nunc@non.edu<\/td><\/tr>
+                <tr><td>Jin<\/td><td>Nunez<\/td><td>porttitor.tellus.non@venenatisamagna.net<\/td><\/tr>
+                <tr><td>Barbara<\/td><td>Gay<\/td><td>est.congue.a@elit.com<\/td><\/tr>
+                <tr><td>Riley<\/td><td>Hammond<\/td><td>tempor.diam@sodalesnisi.net<\/td><\/tr>
+                <tr><td>Molly<\/td><td>Fulton<\/td><td>semper@Naminterdumenim.net<\/td><\/tr>
+                <tr><td>Dexter<\/td><td>Owen<\/td><td>non.ante@odiosagittissemper.ca<\/td><\/tr>
+                <tr><td>Kuame<\/td><td>Merritt<\/td><td>ornare.placerat.orci@nisinibh.ca<\/td><\/tr>
+                <tr><td>Maggie<\/td><td>Delgado<\/td><td>Nam.ligula.elit@Cum.org<\/td><\/tr>
+                <tr><td>Hanae<\/td><td>Washington<\/td><td>nec.euismod@adipiscingelit.org<\/td><\/tr>
+                <tr><td>Jonah<\/td><td>Cherry<\/td><td>ridiculus.mus.Proin@quispede.edu<\/td><\/tr>
+                <tr><td>Cheyenne<\/td><td>Munoz<\/td><td>at@molestiesodalesMauris.edu<\/td><\/tr>
+                <tr><td>India<\/td><td>Mack<\/td><td>sem.mollis@Inmi.co.uk<\/td><\/tr>
+                <tr><td>Lael<\/td><td>Mcneil<\/td><td>porttitor@risusDonecegestas.com<\/td><\/tr>
+                <tr><td>Jillian<\/td><td>Mckay<\/td><td>vulputate.eu.odio@amagnaLorem.co.uk<\/td><\/tr>
+                <tr><td>Shaine<\/td><td>Wright<\/td><td>malesuada@pharetraQuisqueac.org<\/td><\/tr>
+                <tr><td>Keane<\/td><td>Richmond<\/td><td>nostra.per.inceptos@euismodurna.org<\/td><\/tr>
+                <tr><td>Samuel<\/td><td>Davis<\/td><td>felis@euenim.com<\/td><\/tr>
+                <tr><td>Zelenia<\/td><td>Sheppard<\/td><td>Quisque.nonummy@antelectusconvallis.org<\/td><\/tr>
+                <tr><td>Giacomo<\/td><td>Cole<\/td><td>aliquet.libero@urnaUttincidunt.ca<\/td><\/tr>
+                <tr><td>Mason<\/td><td>Hinton<\/td><td>est@Nunc.co.uk<\/td><\/tr>
+                <tr><td>Katelyn<\/td><td>Koch<\/td><td>velit.Aliquam@Suspendisse.edu<\/td><\/tr>
+                <tr><td>Olga<\/td><td>Spencer<\/td><td>faucibus@Praesenteudui.net<\/td><\/tr>
+                <tr><td>Erasmus<\/td><td>Strong<\/td><td>dignissim.lacus@euarcu.net<\/td><\/tr>
+                <tr><td>Regan<\/td><td>Cline<\/td><td>vitae.erat.vel@lacusEtiambibendum.co.uk<\/td><\/tr>
+                <tr><td>Stone<\/td><td>Holt<\/td><td>eget.mollis.lectus@Aeneanegestas.ca<\/td><\/tr>
+                <tr><td>Deanna<\/td><td>Branch<\/td><td>turpis@estMauris.net<\/td><\/tr>
+                <tr><td>Rana<\/td><td>Green<\/td><td>metus@conguea.edu<\/td><\/tr>
+                <tr><td>Caryn<\/td><td>Henson<\/td><td>Donec.sollicitudin.adipiscing@sed.net<\/td><\/tr>
+                <tr><td>Clarke<\/td><td>Stein<\/td><td>nec@mollis.co.uk<\/td><\/tr>
+                <tr><td>Kelsie<\/td><td>Porter<\/td><td>Cum@gravidaAliquam.com<\/td><\/tr>
+                <tr><td>Cooper<\/td><td>Pugh<\/td><td>Quisque.ornare.tortor@dictum.co.uk<\/td><\/tr>
+                <tr><td>Paul<\/td><td>Spencer<\/td><td>ac@InfaucibusMorbi.com<\/td><\/tr>
+                <tr><td>Cassady<\/td><td>Farrell<\/td><td>Suspendisse.non@venenatisa.net<\/td><\/tr>
+                <tr><td>Sydnee<\/td><td>Velazquez<\/td><td>mollis@loremfringillaornare.com<\/td><\/tr>
+                <tr><td>Felix<\/td><td>Boyle<\/td><td>id.libero.Donec@aauctor.org<\/td><\/tr>
+                <tr><td>Ryder<\/td><td>House<\/td><td>molestie@natoquepenatibus.org<\/td><\/tr>
+                <tr><td>Hadley<\/td><td>Holcomb<\/td><td>penatibus@nisi.ca<\/td><\/tr>
+                <tr><td>Marsden<\/td><td>Nunez<\/td><td>Nulla.eget.metus@facilisisvitaeorci.org<\/td><\/tr>
+                <tr><td>Alana<\/td><td>Powell<\/td><td>non.lobortis.quis@interdumfeugiatSed.net<\/td><\/tr>
+                <tr><td>Dennis<\/td><td>Wyatt<\/td><td>Morbi.non@nibhQuisquenonummy.ca<\/td><\/tr>
+                <tr><td>Karleigh<\/td><td>Walton<\/td><td>nascetur.ridiculus@quamdignissimpharetra.com<\/td><\/tr>
+                <tr><td>Brielle<\/td><td>Donovan<\/td><td>placerat@at.edu<\/td><\/tr>
+                <tr><td>Donna<\/td><td>Dickerson<\/td><td>lacus.pede.sagittis@lacusvestibulum.com<\/td><\/tr>
+                <tr><td>Eagan<\/td><td>Pate<\/td><td>est.Nunc@cursusNunc.ca<\/td><\/tr>
+                <tr><td>Carlos<\/td><td>Ramsey<\/td><td>est.ac.facilisis@duinec.co.uk<\/td><\/tr>
+                <tr><td>Regan<\/td><td>Murphy<\/td><td>lectus.Cum@aptent.com<\/td><\/tr>
+                <tr><td>Claudia<\/td><td>Spence<\/td><td>Nunc.lectus.pede@aceleifend.co.uk<\/td><\/tr>
+                <tr><td>Genevieve<\/td><td>Parker<\/td><td>ultrices@inaliquetlobortis.net<\/td><\/tr>
+                <tr><td>Marshall<\/td><td>Allison<\/td><td>erat.semper.rutrum@odio.org<\/td><\/tr>
+                <tr><td>Reuben<\/td><td>Davis<\/td><td>Donec@auctorodio.edu<\/td><\/tr>
+                <tr><td>Ralph<\/td><td>Doyle<\/td><td>pede.Suspendisse.dui@Curabitur.org<\/td><\/tr>
+                <tr><td>Constance<\/td><td>Gilliam<\/td><td>mollis@Nulla.edu<\/td><\/tr>
+                <tr><td>Serina<\/td><td>Jacobson<\/td><td>dictum.augue@ipsum.net<\/td><\/tr>
+                <tr><td>Charity<\/td><td>Byrd<\/td><td>convallis.ante.lectus@scelerisquemollisPhasellus.co.uk<\/td><\/tr>
+                <tr><td>Hyatt<\/td><td>Bird<\/td><td>enim.Nunc.ut@nonmagnaNam.com<\/td><\/tr>
+                <tr><td>Brent<\/td><td>Dunn<\/td><td>ac.sem@nuncid.com<\/td><\/tr>
+                <tr><td>Casey<\/td><td>Bonner<\/td><td>id@ornareelitelit.edu<\/td><\/tr>
+                <tr><td>Hakeem<\/td><td>Gill<\/td><td>dis@nonummyipsumnon.org<\/td><\/tr>
+                <tr><td>Stewart<\/td><td>Meadows<\/td><td>Nunc.pulvinar.arcu@convallisdolorQuisque.net<\/td><\/tr>
+                <tr><td>Nomlanga<\/td><td>Wooten<\/td><td>inceptos@turpisegestas.ca<\/td><\/tr>
+                <tr><td>Sebastian<\/td><td>Watts<\/td><td>Sed.diam.lorem@lorem.co.uk<\/td><\/tr>
+                <tr><td>Chelsea<\/td><td>Larsen<\/td><td>ligula@Nam.net<\/td><\/tr>
+                <tr><td>Cameron<\/td><td>Humphrey<\/td><td>placerat@id.org<\/td><\/tr>
+                <tr><td>Juliet<\/td><td>Bush<\/td><td>consectetuer.euismod@vitaeeratVivamus.co.uk<\/td><\/tr>
+                <tr><td>Caryn<\/td><td>Hooper<\/td><td>eu.enim.Etiam@ridiculus.org<\/td><\/tr>
+                <\/tbody>
+                <\/table>"
