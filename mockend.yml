@@ -26,7 +26,7 @@ models:
   Search:
     fake:
         _count: 1
-        result: "&lt;table class=\"table\"&gt;
+        result: {"&lt;table class=\"table\"&gt;
                 &lt;thead&gt;
                 &lt;tr&gt;
                   &lt;th&gt;First Name&lt;\/th&gt;
@@ -52,4 +52,4 @@ models:
                 &lt;tr&gt;&lt;td&gt;Randall&lt;\/td&gt;&lt;td&gt;Pena&lt;\/td&gt;&lt;td&gt;facilisis@Donecconsectetuer.edu&lt;\/td&gt;&lt;\/tr&gt;
                 &lt;tr&gt;&lt;td&gt;Conan&lt;\/td&gt;&lt;td&gt;Vaughan&lt;\/td&gt;&lt;td&gt;luctus.sit@Classaptenttaciti.edu&lt;\/td&gt;&lt;\/tr&gt;
                 &lt;\/tbody&gt;
-                &lt;\/table&gt;"
+                &lt;\/table&gt;"}
